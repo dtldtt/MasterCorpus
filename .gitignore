@@ -1,0 +1,12 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+.python-version
+
+# 编辑器
+.idea/
+.vscode/
+*.swp
+.DS_Store
