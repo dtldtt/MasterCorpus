@@ -1,139 +1,100 @@
-# BuffettLetters
+# MasterCorpus — 投资大师公开材料归档
 
-巴菲特致股东信（Berkshire Hathaway Shareholder Letters）数据集，包含 1977-2024 年共 48 封致股东信。
+为 BigV-twins 项目准备的投资大师 RAG 语料源仓库。每位大师一个子目录，
+存放公开演讲 / 致股东信 / 著作（电子版）/ 大会问答的原始或转换 markdown。
 
-## 📊 数据来源
-
-数据全部抓取自伯克希尔·哈撒韦官方网站索引页：
-
-- **官网索引**：<https://www.berkshirehathaway.com/letters/letters.html>
-- **覆盖年份**：1977 - 2024（共 48 年，无缺失）
-- **抓取时间**：2026-05
-
-## 📁 目录结构
+## 目录结构
 
 ```
-BuffettLetters/
-├── README.md          # 本文件
-├── letters/           # 数据：48 份致股东信
-│   ├── 1977.md ~ 2001.md   # 25 份 Markdown（由官网 HTML 转换而来）
-│   └── 2002.pdf ~ 2024.pdf # 23 份 PDF（官网原始 PDF，未转换）
-└── scripts/           # 抓取脚本
-    ├── fetch_letters.py   # 主抓取器（多线程并发）
-    ├── fetch_retry.py     # 失败项重试
-    ├── fetch_final.py     # 特殊路径收尾（处理 chooser 页面）
-    └── fetch_repair.py    # 修复 gzip 乱码（curl --compressed）
+MasterCorpus/
+├── buffett/                     # 巴菲特（先行者）
+│   ├── letters/                  # 1977-2024 致股东信 (md + pdf)
+│   ├── BRK-Annual-Meeting/       # 1994-2022 股东大会中文 Q&A
+│   ├── BRK-Annual-Meeting-Supplement/
+│   ├── scripts/                  # 抓取 / 转换脚本
+│   └── README.md                 # 巴菲特独立 README（数据来源 + 流程）
+│
+├── munger/                      # 查理·芒格
+│   ├── books/                    # 《穷查理宝典》epub
+│   └── speeches/                 # 4 篇核心演讲（fs.blog + Wayback 抓取）
+│       ├── 1994-a-lesson-on-elementary-worldly-wisdom-usc-marshall-school.md
+│       ├── 1995-the-psychology-of-human-misjudgment-harvard-law-school.md
+│       ├── 2007-usc-law-commencement-wisdom-speech.md
+│       └── 2017-the-munger-operating-system-tilson-hosts.md
+│
+├── graham/                      # 本杰明·格雷厄姆
+│   └── books/
+│       ├── 聪明的投资者.epub
+│       └── 《证券分析》.pdf
+│
+└── lynch/                       # 彼得·林奇
+    └── books/
+        ├── 彼得·林奇的成功投资.epub
+        ├── 战胜华尔街.epub
+        └── 彼得·林奇教你理财.mobi
 ```
 
-## 📝 数据说明
+## 大师状态
 
-### Markdown 文件（1977-2001，共 25 份）
+| Slug | 中文名 | Corpus 体量 | RAG 索引 | BigV-twins 集成 |
+|------|--------|------------|----------|---------------|
+| `buffett` | 沃伦·巴菲特 | 致股东信 48 + 大会 Q&A 36 年 | ✅ buffett.db (75 MB) | ✅ |
+| `munger` | 查理·芒格 | 4 演讲 + 1 epub (51 MB) | ⏳ 待建 | ⏳ |
+| `graham` | 本杰明·格雷厄姆 | 2 本书（epub + pdf） | ⏳ 待建 | ⏳ |
+| `lynch` | 彼得·林奇 | 3 本书（2 epub + 1 mobi） | ⏳ 待建 | ⏳ |
 
-由官网 HTML 转换而来。每份文件以以下头部开始：
+## 数据流
 
-```markdown
-# Berkshire Hathaway Shareholder Letter — YYYY
-
-Source: <原始 URL>
-
----
-
-（信件正文）
+```
+private:masters-corpus/   ← 用户上传 / 我抓取的源
+       ↓ tar.gz over local 中转
+highper:MasterCorpus/      ← 本仓库（git push GitHub）
+       ↓ ingest_<slug>.py（PDF/EPUB/MOBI → md → bge-m3 嵌入）
+highper:BigV-twins/twins/<slug>.db   ← RAG 索引产物
+       ↓ rsync over local 中转
+private:BigV-twins/twins/<slug>.db   ← 服务消费
 ```
 
-特殊路径说明（抓取脚本中已处理）：
-- 1977-1997：直接位于 `/letters/YYYY.html`
-- 1998-1999：位于 `/letters/YYYYhtm.html`（YYYY.html 是中转选择页）
-- 2000-2001：位于 `/YYYYar/YYYYletter.html`（不在 letters 目录下）
+## 工具栈
 
-### PDF 文件（2002-2024，共 23 份）
+- **PDF → Markdown**：[Marker](https://github.com/datalab-to/marker)（巴菲特已用过；speeches 直接是 md）
+- **EPUB / MOBI → Markdown**：`calibre ebook-convert`（统一处理所有电子书格式）
+- **嵌入模型**：`BAAI/bge-m3`（中英双语，1024 维，最大 8192 tokens；和 zhihu twins 一致）
+- **向量存储**：`sqlite-vec` 扩展（同 zhihu twins）
 
-官网未提供 HTML 版，直接保存原始 PDF：
-- 2002：`/letters/2002pdf.pdf`
-- 2003-2024：`/letters/YYYYltr.pdf`
+## 引用约定（chat 用）
 
-文件大小从 54KB（2022）到 2.4MB（2015，含图表）不等。
+每个 chunk 在 `chunks` 表里都有 `zhihu_id` 字段（被借用为通用 source ID）：
 
-## 🛠️ 脚本使用
+| 大师 | source ID 格式 |
+|------|---------------|
+| buffett | `letter-<year>-<section_idx>` / `meeting-<year>-<filename_hash8>-<qa_idx>` |
+| munger | `speech-<year>-<slug_hash8>-<chunk_idx>` / `book-<book_hash8>-<chapter_idx>` |
+| graham | `book-<book_hash8>-<chapter_idx>` |
+| lynch | `book-<book_hash8>-<chapter_idx>` |
 
-### 环境依赖
+zhihu 归档站 (https://8-155-174-112.nip.io:8000/masters/) 渲染相应 markdown，
+chat 引用按 hash 路由 `/m/<year>/<hash8>` 跳转。
+
+## 复现某位大师的入库流程
 
 ```bash
-pip install --break-system-packages markdownify beautifulsoup4 requests
-# 系统需要：python3, curl
+# Buffett (existing — 不用重跑)
+cd /home/dtl/projects/data/MasterCorpus/buffett
+# scripts/ 下有完整 fetch + convert 流水
+
+# Munger / Graham / Lynch (新)
+cd /home/dtl/projects/BigV-twins
+python scripts/ingest_munger.py --data-dir /home/dtl/projects/data/MasterCorpus/munger
+python scripts/ingest_graham.py --data-dir /home/dtl/projects/data/MasterCorpus/graham
+python scripts/ingest_lynch.py --data-dir /home/dtl/projects/data/MasterCorpus/lynch
+# 产物：~/projects/BigV-twins/twins/{munger,graham,lynch}.db
 ```
 
-### 完整复现抓取流程
+## License
 
-按顺序执行（首次抓取请按此顺序）：
-
-```bash
-cd BuffettLetters/scripts
-
-# 1. 主抓取（并发 8 线程，处理 1977-2003 HTML 和 2004-2024 PDF）
-python3 fetch_letters.py
-
-# 2. 重试第一轮失败的项（连接超时/重置导致的）
-python3 fetch_retry.py
-
-# 3. 处理特殊路径
-#    - 2000/2001 真实 HTML 在 /YYYYar/YYYYletter.html
-#    - 2002/2003 仅有 PDF（无 HTML 版）
-#    - 1982 重试
-python3 fetch_final.py
-
-# 4. 修复乱码（如发现 .md 文件包含大量非 ASCII 字符）
-python3 fetch_repair.py
-```
-
-数据已保存到 `../letters/`，脚本支持幂等（已存在的文件会跳过）。
-
-### 单独脚本说明
-
-| 脚本 | 用途 | 关键点 |
-|---|---|---|
-| `fetch_letters.py` | 批量并发抓取主脚本 | 8 线程并发，使用 `requests` |
-| `fetch_retry.py` | 顺序重试失败项 | 单线程 + 长超时 + 3 次重试 |
-| `fetch_final.py` | 处理特殊 URL 路径 | 处理 chooser 页与异常路径 |
-| `fetch_repair.py` | 修复 gzip 乱码 | 改用 `curl --compressed` 强制解压 |
-
-## ⚠️ 已知陷阱（抓取时踩过的坑）
-
-1. **gzip 响应未解压**：`requests` 在某些情况下不会自动解压 `Content-Encoding: gzip` 的响应，写入文件后是二进制乱码（外观字节不小，但 76% 都是非 ASCII）。**解决方案**：改用 `curl --compressed`。
-2. **1998-1999 中转页**：`YYYY.html` 是 PDF/HTML 选择页，真实内容在 `YYYYhtm.html`。
-3. **2000-2001 路径异常**：HTML 不在 `/letters/` 下，而在 `/YYYYar/YYYYletter.html`。
-4. **2002-2003 无 HTML 版**：官网仅提供 PDF。
-5. **服务器并发限制**：超过 8 线程容易触发连接重置，重试时需顺序请求。
-
-## 📈 数据规模
-
-| 类型 | 数量 | 字数/大小范围 |
-|---|---|---|
-| Markdown | 25 份 | 3,064 ~ 16,234 词/份 |
-| PDF | 23 份 | 54 KB ~ 2.4 MB/份 |
-| **总计** | **48 份** | **约 8.6 MB** |
-
-## 🔍 数据质量验证
-
-所有 25 份 Markdown 已验证：
-- 非 ASCII 字符占比 < 3%
-- 包含 "Warren E. Buffett" 签名
-- 字数与年份匹配（早年偏短，后期稳定）
-
-所有 23 份 PDF 已验证：
-- 文件头为 `%PDF-` 标识
-- 文件大小符合预期
-
-## 🚀 后续建议
-
-如需将 PDF 也转为 Markdown 进行统一文本检索/分析，推荐工具：
-
-- **MinerU**：版面/公式/表格识别质量最佳，适合致股东信这类规整文档
-- **Marker**：速度更快，质量略低
-- **Markitdown**（微软）：轻量但对复杂版面效果一般
-
-```bash
-# 示例：用 MinerU 批量转换 PDF
-pip install -U "magic-pdf[full]"
-ls letters/*.pdf | xargs -P 6 -I {} magic-pdf -p {} -o letters_md_from_pdf -m auto
-```
+各大师材料按其原作权利人许可使用。本仓库仅做学习研究用，**不得用于商业用途、再分发或公开二次发布**。
+- 巴菲特致股东信：Berkshire Hathaway 公开内容
+- 芒格演讲：fs.blog / Farnam Street 转载或 Wayback Machine 历史快照
+- 商业出版书籍（穷查理宝典 / 证券分析 / 聪明的投资者 / 林奇三部曲等）：
+  仅限本人投资研究学习，禁止再分发。
