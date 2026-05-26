@@ -1,0 +1,157 @@
+{
+  "title": "《战胜华尔街》",
+  "subtitle": "Beating the Street（典藏版）",
+  "authors": "Peter Lynch, John Rothchild 著",
+  "master_slug": "lynch",
+  "source_md": "book-战胜华尔街典藏版美彼-ddd6eaa3.md",
+  "n_chapters": 21,
+  "chapters": [
+    {
+      "idx": 1,
+      "title": "扉页",
+      "part": null,
+      "filename": "01-扉页.md",
+      "size_bytes": 25675
+    },
+    {
+      "idx": 2,
+      "title": "第1章 业余投资者比专业投资者业绩更好",
+      "part": null,
+      "filename": "02-第1章-业余投资者比专业投资者业绩更好.md",
+      "size_bytes": 11098
+    },
+    {
+      "idx": 3,
+      "title": "第2章 周末焦虑症",
+      "part": null,
+      "filename": "03-第2章-周末焦虑症.md",
+      "size_bytes": 11213
+    },
+    {
+      "idx": 4,
+      "title": "第3章 基金选择之道",
+      "part": null,
+      "filename": "04-第3章-基金选择之道.md",
+      "size_bytes": 28377
+    },
+    {
+      "idx": 5,
+      "title": "第4章 麦哲伦基金选股回忆录：初期",
+      "part": null,
+      "filename": "05-第4章-麦哲伦基金选股回忆录：初期.md",
+      "size_bytes": 16405
+    },
+    {
+      "idx": 6,
+      "title": "第5章 麦哲伦基金选股回忆录：中期",
+      "part": null,
+      "filename": "06-第5章-麦哲伦基金选股回忆录：中期.md",
+      "size_bytes": 17018
+    },
+    {
+      "idx": 7,
+      "title": "第6章 麦哲伦基金选股回忆录：晚期",
+      "part": null,
+      "filename": "07-第6章-麦哲伦基金选股回忆录：晚期.md",
+      "size_bytes": 24309
+    },
+    {
+      "idx": 8,
+      "title": "第7章 艺术、科学与调研",
+      "part": null,
+      "filename": "08-第7章-艺术、科学与调研.md",
+      "size_bytes": 5897
+    },
+    {
+      "idx": 9,
+      "title": "第8章 零售业选股之道：边逛街边选股",
+      "part": null,
+      "filename": "09-第8章-零售业选股之道：边逛街边选股.md",
+      "size_bytes": 9762
+    },
+    {
+      "idx": 10,
+      "title": "第9章 房地产业选股之道：从利空消息中寻宝",
+      "part": null,
+      "filename": "10-第9章-房地产业选股之道：从利空消息中寻宝.md",
+      "size_bytes": 13096
+    },
+    {
+      "idx": 11,
+      "title": "第10章 超级剪理发记",
+      "part": null,
+      "filename": "11-第10章-超级剪理发记.md",
+      "size_bytes": 4182
+    },
+    {
+      "idx": 12,
+      "title": "第11章 沙漠之花：低迷行业中的卓越公司",
+      "part": null,
+      "filename": "12-第11章-沙漠之花：低迷行业中的卓越公司.md",
+      "size_bytes": 10042
+    },
+    {
+      "idx": 13,
+      "title": "第12章 储蓄贷款协会选股之道",
+      "part": null,
+      "filename": "13-第12章-储蓄贷款协会选股之道.md",
+      "size_bytes": 9145
+    },
+    {
+      "idx": 14,
+      "title": "第13章 近观储蓄贷款协会",
+      "part": null,
+      "filename": "14-第13章-近观储蓄贷款协会.md",
+      "size_bytes": 21895
+    },
+    {
+      "idx": 15,
+      "title": "第15章 周期性公司：冬天到了，春天还会远吗",
+      "part": null,
+      "filename": "15-第15章-周期性公司：冬天到了，春天还会远吗.md",
+      "size_bytes": 7906
+    },
+    {
+      "idx": 16,
+      "title": "第16章 困境中的核电站：CMS能源公司",
+      "part": null,
+      "filename": "16-第16章-困境中的核电站：CMS能源公司.md",
+      "size_bytes": 6591
+    },
+    {
+      "idx": 17,
+      "title": "第17章 山姆大叔的旧货出售：联合资本公司Ⅱ期",
+      "part": null,
+      "filename": "17-第17章-山姆大叔的旧货出售：联合资本公司Ⅱ期.md",
+      "size_bytes": 5429
+    },
+    {
+      "idx": 18,
+      "title": "第18章 我的房利美公司纪事",
+      "part": null,
+      "filename": "18-第18章-我的房利美公司纪事.md",
+      "size_bytes": 9907
+    },
+    {
+      "idx": 19,
+      "title": "第19章 后院宝藏：共同基金之康联集团",
+      "part": null,
+      "filename": "19-第19章-后院宝藏：共同基金之康联集团.md",
+      "size_bytes": 3412
+    },
+    {
+      "idx": 20,
+      "title": "第20章 餐饮股：把你的资金投入到你的嘴巴所到之处",
+      "part": null,
+      "filename": "20-第20章-餐饮股：把你的资金投入到你的嘴巴所到之处.md",
+      "size_bytes": 4899
+    },
+    {
+      "idx": 21,
+      "title": "第21章 6个月的定期检查",
+      "part": null,
+      "filename": "21-第21章-6个月的定期检查.md",
+      "size_bytes": 29905
+    }
+  ]
+}

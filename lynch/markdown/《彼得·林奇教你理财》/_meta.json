@@ -1,0 +1,45 @@
+{
+  "title": "《彼得·林奇教你理财》",
+  "subtitle": "Learn to Earn",
+  "authors": "Peter Lynch, John Rothchild 著",
+  "master_slug": "lynch",
+  "source_md": "book-彼得林奇教你理财彼得-8ccab9f9.md",
+  "n_chapters": 5,
+  "chapters": [
+    {
+      "idx": 1,
+      "title": "扉页",
+      "part": null,
+      "filename": "01-扉页.md",
+      "size_bytes": 598
+    },
+    {
+      "idx": 2,
+      "title": "第1章 美国股市的前世今生",
+      "part": null,
+      "filename": "02-第1章-美国股市的前世今生.md",
+      "size_bytes": 264
+    },
+    {
+      "idx": 3,
+      "title": "第2章 股市投资的基本原理",
+      "part": null,
+      "filename": "03-第2章-股市投资的基本原理.md",
+      "size_bytes": 374
+    },
+    {
+      "idx": 4,
+      "title": "第3章 上市公司的生命周期",
+      "part": null,
+      "filename": "04-第3章-上市公司的生命周期.md",
+      "size_bytes": 109
+    },
+    {
+      "idx": 5,
+      "title": "第4章 上市公司的成功秘诀",
+      "part": null,
+      "filename": "05-第4章-上市公司的成功秘诀.md",
+      "size_bytes": 161018
+    }
+  ]
+}

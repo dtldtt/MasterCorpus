@@ -1,0 +1,297 @@
+{
+  "title": "《彼得·林奇的成功投资》",
+  "subtitle": "One Up on Wall Street（典藏版）",
+  "authors": "Peter Lynch, John Rothchild 著",
+  "master_slug": "lynch",
+  "source_md": "book-彼得林奇的成功投资典-ed9d869f.md",
+  "n_chapters": 41,
+  "chapters": [
+    {
+      "idx": 1,
+      "title": "扉页",
+      "part": null,
+      "filename": "01-扉页.md",
+      "size_bytes": 177
+    },
+    {
+      "idx": 2,
+      "title": "版权信息",
+      "part": null,
+      "filename": "02-版权信息.md",
+      "size_bytes": 163
+    },
+    {
+      "idx": 3,
+      "title": "推荐序",
+      "part": null,
+      "filename": "03-推荐序.md",
+      "size_bytes": 2296
+    },
+    {
+      "idx": 4,
+      "title": "致谢",
+      "part": null,
+      "filename": "04-致谢.md",
+      "size_bytes": 261
+    },
+    {
+      "idx": 5,
+      "title": "译者序",
+      "part": null,
+      "filename": "05-译者序.md",
+      "size_bytes": 3329
+    },
+    {
+      "idx": 6,
+      "title": "千禧版序言",
+      "part": null,
+      "filename": "06-千禧版序言.md",
+      "size_bytes": 19313
+    },
+    {
+      "idx": 7,
+      "title": "引言 · 引言",
+      "part": "引言",
+      "filename": "07-引言-·-引言.md",
+      "size_bytes": 992
+    },
+    {
+      "idx": 8,
+      "title": "一些让我心烦意乱的小事",
+      "part": "引言",
+      "filename": "08-一些让我心烦意乱的小事.md",
+      "size_bytes": 1304
+    },
+    {
+      "idx": 9,
+      "title": "10月股市暴跌的教训",
+      "part": "引言",
+      "filename": "09-10月股市暴跌的教训.md",
+      "size_bytes": 597
+    },
+    {
+      "idx": 10,
+      "title": "导论 · 引言",
+      "part": "导论",
+      "filename": "10-导论-·-引言.md",
+      "size_bytes": 1457
+    },
+    {
+      "idx": 11,
+      "title": "奇妙的10倍股",
+      "part": "导论",
+      "filename": "11-奇妙的10倍股.md",
+      "size_bytes": 1146
+    },
+    {
+      "idx": 12,
+      "title": "油炸圈饼和苹果电脑",
+      "part": "导论",
+      "filename": "12-油炸圈饼和苹果电脑.md",
+      "size_bytes": 2045
+    },
+    {
+      "idx": 13,
+      "title": "普通常识的重要性",
+      "part": "导论",
+      "filename": "13-普通常识的重要性.md",
+      "size_bytes": 5496
+    },
+    {
+      "idx": 14,
+      "title": "这是一家上市公司吗",
+      "part": "导论",
+      "filename": "14-这是一家上市公司吗.md",
+      "size_bytes": 1042
+    },
+    {
+      "idx": 15,
+      "title": "不要投资于你根本不了解的公司股票",
+      "part": "导论",
+      "filename": "15-不要投资于你根本不了解的公司股票.md",
+      "size_bytes": 1034
+    },
+    {
+      "idx": 16,
+      "title": "椰菜娃娃畅销但股票并不一定好",
+      "part": "导论",
+      "filename": "16-椰菜娃娃畅销但股票并不一定好.md",
+      "size_bytes": 970
+    },
+    {
+      "idx": 17,
+      "title": "本书结构",
+      "part": "导论",
+      "filename": "17-本书结构.md",
+      "size_bytes": 407
+    },
+    {
+      "idx": 18,
+      "title": "第一部分 · 引言",
+      "part": "第一部分",
+      "filename": "18-第一部分-·-引言.md",
+      "size_bytes": 389
+    },
+    {
+      "idx": 19,
+      "title": "第1章",
+      "part": "第一部分",
+      "filename": "19-第1章.md",
+      "size_bytes": 8676
+    },
+    {
+      "idx": 20,
+      "title": "第2章",
+      "part": "第一部分",
+      "filename": "20-第2章.md",
+      "size_bytes": 14664
+    },
+    {
+      "idx": 21,
+      "title": "第3章",
+      "part": "第一部分",
+      "filename": "21-第3章.md",
+      "size_bytes": 11053
+    },
+    {
+      "idx": 22,
+      "title": "第4章",
+      "part": "第一部分",
+      "filename": "22-第4章.md",
+      "size_bytes": 6059
+    },
+    {
+      "idx": 23,
+      "title": "第5章",
+      "part": "第一部分",
+      "filename": "23-第5章.md",
+      "size_bytes": 7067
+    },
+    {
+      "idx": 24,
+      "title": "第二部分 · 引言",
+      "part": "第二部分",
+      "filename": "24-第二部分-·-引言.md",
+      "size_bytes": 233
+    },
+    {
+      "idx": 25,
+      "title": "第6章",
+      "part": "第二部分",
+      "filename": "25-第6章.md",
+      "size_bytes": 8139
+    },
+    {
+      "idx": 26,
+      "title": "第7章",
+      "part": "第二部分",
+      "filename": "26-第7章.md",
+      "size_bytes": 20833
+    },
+    {
+      "idx": 27,
+      "title": "第8章",
+      "part": "第二部分",
+      "filename": "27-第8章.md",
+      "size_bytes": 18210
+    },
+    {
+      "idx": 28,
+      "title": "第9章",
+      "part": "第二部分",
+      "filename": "28-第9章.md",
+      "size_bytes": 12048
+    },
+    {
+      "idx": 29,
+      "title": "第10章",
+      "part": "第二部分",
+      "filename": "29-第10章.md",
+      "size_bytes": 10141
+    },
+    {
+      "idx": 30,
+      "title": "第11章",
+      "part": "第二部分",
+      "filename": "30-第11章.md",
+      "size_bytes": 8994
+    },
+    {
+      "idx": 31,
+      "title": "第12章",
+      "part": "第二部分",
+      "filename": "31-第12章.md",
+      "size_bytes": 14356
+    },
+    {
+      "idx": 32,
+      "title": "第13章",
+      "part": "第二部分",
+      "filename": "32-第13章.md",
+      "size_bytes": 24999
+    },
+    {
+      "idx": 33,
+      "title": "第14章",
+      "part": "第二部分",
+      "filename": "33-第14章.md",
+      "size_bytes": 4524
+    },
+    {
+      "idx": 34,
+      "title": "第15章",
+      "part": "第二部分",
+      "filename": "34-第15章.md",
+      "size_bytes": 5783
+    },
+    {
+      "idx": 35,
+      "title": "第三部分 · 引言",
+      "part": "第三部分",
+      "filename": "35-第三部分-·-引言.md",
+      "size_bytes": 170
+    },
+    {
+      "idx": 36,
+      "title": "第16章",
+      "part": "第三部分",
+      "filename": "36-第16章.md",
+      "size_bytes": 8494
+    },
+    {
+      "idx": 37,
+      "title": "第17章",
+      "part": "第三部分",
+      "filename": "37-第17章.md",
+      "size_bytes": 12436
+    },
+    {
+      "idx": 38,
+      "title": "第18章",
+      "part": "第三部分",
+      "filename": "38-第18章.md",
+      "size_bytes": 10707
+    },
+    {
+      "idx": 39,
+      "title": "第19章",
+      "part": "第三部分",
+      "filename": "39-第19章.md",
+      "size_bytes": 5664
+    },
+    {
+      "idx": 40,
+      "title": "第20章",
+      "part": "第三部分",
+      "filename": "40-第20章.md",
+      "size_bytes": 11156
+    },
+    {
+      "idx": 41,
+      "title": "后记",
+      "part": null,
+      "filename": "41-后记.md",
+      "size_bytes": 1456
+    }
+  ]
+}

@@ -1,0 +1,556 @@
+{
+  "title": "《穷查理宝典》",
+  "subtitle": "查理·芒格智慧箴言录（全新增订本）",
+  "authors": "Charles T. Munger 著 / Peter Kaufman 编辑",
+  "master_slug": "munger",
+  "source_md": "book-穷查理宝典查理芒格智-3fced624.md",
+  "n_chapters": 78,
+  "chapters": [
+    {
+      "idx": 1,
+      "title": "扉页",
+      "part": null,
+      "filename": "01-扉页.md",
+      "size_bytes": 298
+    },
+    {
+      "idx": 2,
+      "title": "目录",
+      "part": null,
+      "filename": "02-目录.md",
+      "size_bytes": 1681
+    },
+    {
+      "idx": 3,
+      "title": "献给查理·芒格",
+      "part": null,
+      "filename": "03-献给查理·芒格.md",
+      "size_bytes": 103
+    },
+    {
+      "idx": 4,
+      "title": "中文版序言",
+      "part": null,
+      "filename": "04-中文版序言.md",
+      "size_bytes": 13019
+    },
+    {
+      "idx": 5,
+      "title": "鸣谢",
+      "part": null,
+      "filename": "05-鸣谢.md",
+      "size_bytes": 801
+    },
+    {
+      "idx": 6,
+      "title": "序言",
+      "part": null,
+      "filename": "06-序言.md",
+      "size_bytes": 1181
+    },
+    {
+      "idx": 7,
+      "title": "驳辞",
+      "part": null,
+      "filename": "07-驳辞.md",
+      "size_bytes": 442
+    },
+    {
+      "idx": 8,
+      "title": "导读",
+      "part": null,
+      "filename": "08-导读.md",
+      "size_bytes": 1223
+    },
+    {
+      "idx": 9,
+      "title": "关于本书",
+      "part": null,
+      "filename": "09-关于本书.md",
+      "size_bytes": 1026
+    },
+    {
+      "idx": 10,
+      "title": "查理·芒格传略",
+      "part": "第一章",
+      "filename": "10-查理·芒格传略.md",
+      "size_bytes": 10774
+    },
+    {
+      "idx": 11,
+      "title": "歌颂长者：芒格论晚年",
+      "part": "第一章",
+      "filename": "11-歌颂长者：芒格论晚年.md",
+      "size_bytes": 8260
+    },
+    {
+      "idx": 12,
+      "title": "忆念：晚辈谈芒格",
+      "part": "第一章",
+      "filename": "12-忆念：晚辈谈芒格.md",
+      "size_bytes": 7446
+    },
+    {
+      "idx": 13,
+      "title": "朋友们如是说",
+      "part": "第一章",
+      "filename": "13-朋友们如是说.md",
+      "size_bytes": 2081
+    },
+    {
+      "idx": 14,
+      "title": "沃伦·巴菲特答问录",
+      "part": "第一章",
+      "filename": "14-沃伦·巴菲特答问录.md",
+      "size_bytes": 922
+    },
+    {
+      "idx": 15,
+      "title": "苏丝·巴菲特答问录",
+      "part": "第一章",
+      "filename": "15-苏丝·巴菲特答问录.md",
+      "size_bytes": 1472
+    },
+    {
+      "idx": 16,
+      "title": "查理·芒格的投资合伙公司的投资业绩",
+      "part": "第一章",
+      "filename": "16-查理·芒格的投资合伙公司的投资业绩.md",
+      "size_bytes": 366
+    },
+    {
+      "idx": 17,
+      "title": "沃伦和瑞克谈“船长查理”",
+      "part": "第一章",
+      "filename": "17-沃伦和瑞克谈“船长查理”.md",
+      "size_bytes": 514
+    },
+    {
+      "idx": 18,
+      "title": "查理·芒格的慈善课程",
+      "part": "第一章",
+      "filename": "18-查理·芒格的慈善课程.md",
+      "size_bytes": 1499
+    },
+    {
+      "idx": 19,
+      "title": "富兰克林论衰老",
+      "part": "第一章",
+      "filename": "19-富兰克林论衰老.md",
+      "size_bytes": 839
+    },
+    {
+      "idx": 20,
+      "title": "第二章 · 引言",
+      "part": "第二章",
+      "filename": "20-第二章-·-引言.md",
+      "size_bytes": 1117
+    },
+    {
+      "idx": 21,
+      "title": "芒格进行商业分析和评估的“多元思维模型”",
+      "part": "第二章",
+      "filename": "21-芒格进行商业分析和评估的“多元思维模型”.md",
+      "size_bytes": 5961
+    },
+    {
+      "idx": 22,
+      "title": "芒格的投资评估过程",
+      "part": "第二章",
+      "filename": "22-芒格的投资评估过程.md",
+      "size_bytes": 6249
+    },
+    {
+      "idx": 23,
+      "title": "投资原则检查清单",
+      "part": "第二章",
+      "filename": "23-投资原则检查清单.md",
+      "size_bytes": 3290
+    },
+    {
+      "idx": 24,
+      "title": "诚实是最好的策略",
+      "part": "第二章",
+      "filename": "24-诚实是最好的策略.md",
+      "size_bytes": 1107
+    },
+    {
+      "idx": 25,
+      "title": "L·O·L·L·A·P·A·L·O·O·Z·A效应",
+      "part": "第二章",
+      "filename": "25-L·O·L·L·A·P·A·L·O·O·Z·A效应.md",
+      "size_bytes": 537
+    },
+    {
+      "idx": 26,
+      "title": "多元思维模型",
+      "part": "第二章",
+      "filename": "26-多元思维模型.md",
+      "size_bytes": 567
+    },
+    {
+      "idx": 27,
+      "title": "纪律和耐心",
+      "part": "第二章",
+      "filename": "27-纪律和耐心.md",
+      "size_bytes": 634
+    },
+    {
+      "idx": 28,
+      "title": "查理论诚实：在2004年西科年会上的讲话",
+      "part": "第二章",
+      "filename": "28-查理论诚实：在2004年西科年会上的讲话.md",
+      "size_bytes": 1435
+    },
+    {
+      "idx": 29,
+      "title": "第三章 · 引言",
+      "part": "第三章",
+      "filename": "29-第三章-·-引言.md",
+      "size_bytes": 2065
+    },
+    {
+      "idx": 30,
+      "title": "我们成功的关键",
+      "part": "第三章",
+      "filename": "30-我们成功的关键.md",
+      "size_bytes": 504
+    },
+    {
+      "idx": 31,
+      "title": "论伯克希尔·哈撒韦",
+      "part": "第三章",
+      "filename": "31-论伯克希尔·哈撒韦.md",
+      "size_bytes": 5764
+    },
+    {
+      "idx": 32,
+      "title": "对巴菲特的评论",
+      "part": "第三章",
+      "filename": "32-对巴菲特的评论.md",
+      "size_bytes": 1900
+    },
+    {
+      "idx": 33,
+      "title": "投资建议",
+      "part": "第三章",
+      "filename": "33-投资建议.md",
+      "size_bytes": 5516
+    },
+    {
+      "idx": 34,
+      "title": "谈市场",
+      "part": "第三章",
+      "filename": "34-谈市场.md",
+      "size_bytes": 1627
+    },
+    {
+      "idx": 35,
+      "title": "对企业管理层的批评",
+      "part": "第三章",
+      "filename": "35-对企业管理层的批评.md",
+      "size_bytes": 899
+    },
+    {
+      "idx": 36,
+      "title": "对基金管理企业的批评",
+      "part": "第三章",
+      "filename": "36-对基金管理企业的批评.md",
+      "size_bytes": 939
+    },
+    {
+      "idx": 37,
+      "title": "对华尔街的批评",
+      "part": "第三章",
+      "filename": "37-对华尔街的批评.md",
+      "size_bytes": 1376
+    },
+    {
+      "idx": 38,
+      "title": "对会计的批评",
+      "part": "第三章",
+      "filename": "38-对会计的批评.md",
+      "size_bytes": 1753
+    },
+    {
+      "idx": 39,
+      "title": "对股票期权的批评",
+      "part": "第三章",
+      "filename": "39-对股票期权的批评.md",
+      "size_bytes": 1124
+    },
+    {
+      "idx": 40,
+      "title": "对金融机构和衍生品的警告",
+      "part": "第三章",
+      "filename": "40-对金融机构和衍生品的警告.md",
+      "size_bytes": 2458
+    },
+    {
+      "idx": 41,
+      "title": "对律师、律师事务所和诉讼的批评",
+      "part": "第三章",
+      "filename": "41-对律师、律师事务所和诉讼的批评.md",
+      "size_bytes": 2070
+    },
+    {
+      "idx": 42,
+      "title": "思维模型",
+      "part": "第三章",
+      "filename": "42-思维模型.md",
+      "size_bytes": 1850
+    },
+    {
+      "idx": 43,
+      "title": "对高等教育的批评",
+      "part": "第三章",
+      "filename": "43-对高等教育的批评.md",
+      "size_bytes": 437
+    },
+    {
+      "idx": 44,
+      "title": "怎样变得幸福、富裕，以及其他建议",
+      "part": "第三章",
+      "filename": "44-怎样变得幸福、富裕，以及其他建议.md",
+      "size_bytes": 1992
+    },
+    {
+      "idx": 45,
+      "title": "幽默",
+      "part": "第三章",
+      "filename": "45-幽默.md",
+      "size_bytes": 988
+    },
+    {
+      "idx": 46,
+      "title": "辛普森谈芒格",
+      "part": "第三章",
+      "filename": "46-辛普森谈芒格.md",
+      "size_bytes": 444
+    },
+    {
+      "idx": 47,
+      "title": "芒格谈辛普森",
+      "part": "第三章",
+      "filename": "47-芒格谈辛普森.md",
+      "size_bytes": 357
+    },
+    {
+      "idx": 48,
+      "title": "塞内加尔谈芒格",
+      "part": "第三章",
+      "filename": "48-塞内加尔谈芒格.md",
+      "size_bytes": 463
+    },
+    {
+      "idx": 49,
+      "title": "芒格谈塞内加尔",
+      "part": "第三章",
+      "filename": "49-芒格谈塞内加尔.md",
+      "size_bytes": 223
+    },
+    {
+      "idx": 50,
+      "title": "第四章 · 引言",
+      "part": "第四章",
+      "filename": "50-第四章-·-引言.md",
+      "size_bytes": 1025
+    },
+    {
+      "idx": 51,
+      "title": "第一讲",
+      "part": "第四章",
+      "filename": "51-第一讲.md",
+      "size_bytes": 7277
+    },
+    {
+      "idx": 52,
+      "title": "第二讲",
+      "part": "第四章",
+      "filename": "52-第二讲.md",
+      "size_bytes": 34414
+    },
+    {
+      "idx": 53,
+      "title": "第三讲",
+      "part": "第四章",
+      "filename": "53-第三讲.md",
+      "size_bytes": 39293
+    },
+    {
+      "idx": 54,
+      "title": "第四讲",
+      "part": "第四章",
+      "filename": "54-第四讲.md",
+      "size_bytes": 14540
+    },
+    {
+      "idx": 55,
+      "title": "第五讲",
+      "part": "第四章",
+      "filename": "55-第五讲.md",
+      "size_bytes": 11516
+    },
+    {
+      "idx": 56,
+      "title": "第六讲",
+      "part": "第四章",
+      "filename": "56-第六讲.md",
+      "size_bytes": 8079
+    },
+    {
+      "idx": 57,
+      "title": "第七讲",
+      "part": "第四章",
+      "filename": "57-第七讲.md",
+      "size_bytes": 8440
+    },
+    {
+      "idx": 58,
+      "title": "第八讲",
+      "part": "第四章",
+      "filename": "58-第八讲.md",
+      "size_bytes": 10968
+    },
+    {
+      "idx": 59,
+      "title": "第九讲",
+      "part": "第四章",
+      "filename": "59-第九讲.md",
+      "size_bytes": 32591
+    },
+    {
+      "idx": 60,
+      "title": "第十讲",
+      "part": "第四章",
+      "filename": "60-第十讲.md",
+      "size_bytes": 14604
+    },
+    {
+      "idx": 61,
+      "title": "第十一讲",
+      "part": "第四章",
+      "filename": "61-第十一讲.md",
+      "size_bytes": 51956
+    },
+    {
+      "idx": 62,
+      "title": "最新的普世智慧：查理答问录",
+      "part": "第四章",
+      "filename": "62-最新的普世智慧：查理答问录.md",
+      "size_bytes": 901
+    },
+    {
+      "idx": 63,
+      "title": "查理的检查清单",
+      "part": "第四章",
+      "filename": "63-查理的检查清单.md",
+      "size_bytes": 782
+    },
+    {
+      "idx": 64,
+      "title": "赛马就是投资，投资就是赛马",
+      "part": "第四章",
+      "filename": "64-赛马就是投资，投资就是赛马.md",
+      "size_bytes": 1006
+    },
+    {
+      "idx": 65,
+      "title": "事关信任",
+      "part": "第四章",
+      "filename": "65-事关信任.md",
+      "size_bytes": 482
+    },
+    {
+      "idx": 66,
+      "title": "第五章 · 引言",
+      "part": "第五章",
+      "filename": "66-第五章-·-引言.md",
+      "size_bytes": 497
+    },
+    {
+      "idx": 67,
+      "title": "如果说标准石油正在试图变得贪婪的话，那么它的表现可不够好",
+      "part": "第五章",
+      "filename": "67-如果说标准石油正在试图变得贪婪的话，那么它的表现可不够好.md",
+      "size_bytes": 2532
+    },
+    {
+      "idx": 68,
+      "title": "巴菲特的副手……",
+      "part": "第五章",
+      "filename": "68-巴菲特的副手…….md",
+      "size_bytes": 2369
+    },
+    {
+      "idx": 69,
+      "title": "互助储蓄与贷款联盟的请辞信",
+      "part": "第五章",
+      "filename": "69-互助储蓄与贷款联盟的请辞信.md",
+      "size_bytes": 1358
+    },
+    {
+      "idx": 70,
+      "title": "反托拉斯法的滥用",
+      "part": "第五章",
+      "filename": "70-反托拉斯法的滥用.md",
+      "size_bytes": 2426
+    },
+    {
+      "idx": 71,
+      "title": "芒格科学中心接近完工",
+      "part": "第五章",
+      "filename": "71-芒格科学中心接近完工.md",
+      "size_bytes": 3503
+    },
+    {
+      "idx": 72,
+      "title": "不那么沉默的合伙人",
+      "part": "第五章",
+      "filename": "72-不那么沉默的合伙人.md",
+      "size_bytes": 10232
+    },
+    {
+      "idx": 73,
+      "title": "乐观主义在会计中没有容身之地",
+      "part": "第五章",
+      "filename": "73-乐观主义在会计中没有容身之地.md",
+      "size_bytes": 1463
+    },
+    {
+      "idx": 74,
+      "title": "贝西克兰兴衰记",
+      "part": "第五章",
+      "filename": "74-贝西克兰兴衰记.md",
+      "size_bytes": 3400
+    },
+    {
+      "idx": 75,
+      "title": "“贪无厌”“高财技”“黑心肠”和“脑残”国的悲剧",
+      "part": "第五章",
+      "filename": "75-“贪无厌”“高财技”“黑心肠”和“脑残”国的悲剧.md",
+      "size_bytes": 5815
+    },
+    {
+      "idx": 76,
+      "title": "过去与未来：副董事长致辞",
+      "part": "第五章",
+      "filename": "76-过去与未来：副董事长致辞.md",
+      "size_bytes": 5201
+    },
+    {
+      "idx": 77,
+      "title": "查理·芒格推荐书目",
+      "part": null,
+      "filename": "77-查理·芒格推荐书目.md",
+      "size_bytes": 3892
+    },
+    {
+      "idx": 78,
+      "title": "查理·芒格年谱",
+      "part": null,
+      "filename": "78-查理·芒格年谱.md",
+      "size_bytes": 7731
+    }
+  ]
+}
