@@ -145,8 +145,6 @@ def promote_inline_chapters(md: str) -> str:
 
 
 _RE_NUMERIC_HEADER_MERGE = re.compile(
-    # `## 01` 后面紧跟 (空白行) 紧跟 `**实际标题`
-    # （《证券分析》第6版 epub 这种结构：H2 只是数字，下一行是 bold 段落 = 真章名）
     r"^(##\s+)(\d{1,3})\s*$\n+\*\*\s*([^\n*]+?)\s*\n",
     re.M,
 )
@@ -160,12 +158,27 @@ def merge_numeric_with_following_bold(md: str) -> str:
     return _RE_NUMERIC_HEADER_MERGE.sub(repl, md)
 
 
+_RE_CHAPTER_NUM_MERGE = re.compile(
+    r"^(##\s+第\d+章)\s*$\n+\*\*\s*([^\n*]+?)\s*\n",
+    re.M,
+)
+
+
+def merge_chapter_with_following_bold(md: str) -> str:
+    """第N章-only header + 紧随的 bold 段 → 合并为 第N章 标题."""
+    def repl(m):
+        prefix, real = m.group(1), m.group(2)
+        return f"{prefix} {real}\n"
+    return _RE_CHAPTER_NUM_MERGE.sub(repl, md)
+
+
 def clean_md(md: str) -> str:
     """Apply all post-processing rules to a single book's md."""
     md = RE_HEADER_BOLD.sub(_strip_header_bold, md)
     md = RE_HEADER_TRAIL_STARS.sub(r"\1", md)
     md = RE_HEADER_TRAIL.sub(r"\1", md)
     md = merge_numeric_with_following_bold(md)
+    md = merge_chapter_with_following_bold(md)
     md = promote_inline_chapters(md)
     md = re.sub(r"\n{4,}", "\n\n\n", md)
     return md
