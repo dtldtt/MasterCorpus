@@ -47,13 +47,13 @@ BOOK_MAP: dict[tuple[str, str], dict] = {
         "subtitle": "The Intelligent Investor",
         "authors": "Benjamin Graham 著",
     },
-    # 《证券分析》calibre 转出来是断行错乱的乱码（PDF 源质量太差），暂跳过。
-    # 用户有原书可以稍后换源重转。
-    # ("graham", "book-证券分析本杰明格雷厄-13825e15"): {
-    #     "title": "《证券分析》",
-    #     "subtitle": "Security Analysis",
-    #     "authors": "Benjamin Graham, David Dodd 著",
-    # },
+    # 《证券分析》— 用户 2026-05-26 换了 epub 源（94MB，原书第 6 版），
+    # calibre 转出来 1015 个 header，结构完整。
+    ("graham", "book-证券分析原书第版-584b1558"): {
+        "title": "《证券分析》",
+        "subtitle": "Security Analysis（原书第 6 版）",
+        "authors": "Benjamin Graham, David Dodd 著 / 巴曙松等译",
+    },
     ("lynch", "book-彼得林奇的成功投资典-ed9d869f"): {
         "title": "《彼得·林奇的成功投资》",
         "subtitle": "One Up on Wall Street（典藏版）",
@@ -75,14 +75,21 @@ BOOK_MAP: dict[tuple[str, str], dict] = {
 # ============================================================================
 # 清理规则
 # ============================================================================
-# 1. 去除标题里残留的 ** 包裹：`## **第1章 标题****` → `## 第1章 标题`
-RE_HEADER_BOLD = re.compile(r"^(#+\s*)\*+\s*([^*\n]+?)\s*\*+\s*$", re.M)
+# 1. 去除标题里残留的 ** 包裹（含 证券分析 的双 bold 模式 ）
+RE_HEADER_BOLD = re.compile(r"^(#+\s+)\*{1,2}\s*(.*?)\s*\*{0,2}\s*$", re.M)
+
+
+def _strip_header_bold(m: re.Match) -> str:
+    prefix = m.group(1)
+    content = re.sub(r"\*{1,2}", "", m.group(2)).strip()
+    return f"{prefix}{content}"
 
 # 2. 去除标题尾部多余空白和「  」（calibre 经常加 `  ` 双空格换行）
 RE_HEADER_TRAIL = re.compile(r"^(#+\s+\S.*?)\s+$", re.M)
 
 # 3. 标题行里末尾的纯 `**`（如 `## 第1章 ****`）
 RE_HEADER_TRAIL_STARS = re.compile(r"^(#+\s+\S[^\n]*?)\*+\s*$", re.M)
+
 
 # 4. 删除「z-library / 1lib / z-lib / etc.」噪声后缀（在 H1 里）
 RE_ZLIB_NOISE = re.compile(
@@ -137,13 +144,29 @@ def promote_inline_chapters(md: str) -> str:
     return "\n".join(out_lines)
 
 
+_RE_NUMERIC_HEADER_MERGE = re.compile(
+    # `## 01` 后面紧跟 (空白行) 紧跟 `**实际标题`
+    # （《证券分析》第6版 epub 这种结构：H2 只是数字，下一行是 bold 段落 = 真章名）
+    r"^(##\s+)(\d{1,3})\s*$\n+\*\*\s*([^\n*]+?)\s*\n",
+    re.M,
+)
+
+
+def merge_numeric_with_following_bold(md: str) -> str:
+    """章号-only header + 紧随的 bold 段 → 合并为完整章名."""
+    def repl(m):
+        prefix, num, real = m.group(1), m.group(2), m.group(3)
+        return f"{prefix}第{num}章 {real}\n"
+    return _RE_NUMERIC_HEADER_MERGE.sub(repl, md)
+
+
 def clean_md(md: str) -> str:
     """Apply all post-processing rules to a single book's md."""
-    md = RE_HEADER_BOLD.sub(r"\1\2", md)
+    md = RE_HEADER_BOLD.sub(_strip_header_bold, md)
     md = RE_HEADER_TRAIL_STARS.sub(r"\1", md)
     md = RE_HEADER_TRAIL.sub(r"\1", md)
+    md = merge_numeric_with_following_bold(md)
     md = promote_inline_chapters(md)
-    # 清理多余的连续空行
     md = re.sub(r"\n{4,}", "\n\n\n", md)
     return md
 

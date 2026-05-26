@@ -1,0 +1,549 @@
+{
+  "title": "《证券分析》",
+  "subtitle": "Security Analysis（原书第 6 版）",
+  "authors": "Benjamin Graham, David Dodd 著 / 巴曙松等译",
+  "master_slug": "graham",
+  "source_md": "book-证券分析原书第版-584b1558.md",
+  "n_chapters": 77,
+  "chapters": [
+    {
+      "idx": 1,
+      "title": "扉页",
+      "part": null,
+      "filename": "01-扉页.md",
+      "size_bytes": 489
+    },
+    {
+      "idx": 2,
+      "title": "各方赞誉",
+      "part": null,
+      "filename": "02-各方赞誉.md",
+      "size_bytes": 2980
+    },
+    {
+      "idx": 3,
+      "title": "推荐序一",
+      "part": null,
+      "filename": "03-推荐序一.md",
+      "size_bytes": 1071
+    },
+    {
+      "idx": 4,
+      "title": "推荐序二",
+      "part": null,
+      "filename": "04-推荐序二.md",
+      "size_bytes": 1912
+    },
+    {
+      "idx": 5,
+      "title": "译者序",
+      "part": null,
+      "filename": "05-译者序.md",
+      "size_bytes": 4556
+    },
+    {
+      "idx": 6,
+      "title": "目 录",
+      "part": null,
+      "filename": "06-目-录.md",
+      "size_bytes": 1486
+    },
+    {
+      "idx": 7,
+      "title": "第6版前言",
+      "part": null,
+      "filename": "07-第6版前言.md",
+      "size_bytes": 16691
+    },
+    {
+      "idx": 8,
+      "title": "第2版前言",
+      "part": null,
+      "filename": "08-第2版前言.md",
+      "size_bytes": 810
+    },
+    {
+      "idx": 9,
+      "title": "第1版前言",
+      "part": null,
+      "filename": "09-第1版前言.md",
+      "size_bytes": 998
+    },
+    {
+      "idx": 10,
+      "title": "第6版引言",
+      "part": null,
+      "filename": "10-第6版引言.md",
+      "size_bytes": 12853
+    },
+    {
+      "idx": 11,
+      "title": "第2版引言 · 引言",
+      "part": "第2版引言",
+      "filename": "11-第2版引言-·-引言.md",
+      "size_bytes": 8174
+    },
+    {
+      "idx": 12,
+      "title": "导读一",
+      "part": "第2版引言",
+      "filename": "12-导读一.md",
+      "size_bytes": 14401
+    },
+    {
+      "idx": 13,
+      "title": "导读二",
+      "part": "第2版引言",
+      "filename": "13-导读二.md",
+      "size_bytes": 2824
+    },
+    {
+      "idx": 14,
+      "title": "第01章 证券分析的范围与局限以及内在价值的概念",
+      "part": "第2版引言",
+      "filename": "14-第01章-证券分析的范围与局限以及内在价值的概念.md",
+      "size_bytes": 8944
+    },
+    {
+      "idx": 15,
+      "title": "第02章 分析问题的基本要素以及定量和定性因素",
+      "part": "第2版引言",
+      "filename": "15-第02章-分析问题的基本要素以及定量和定性因素.md",
+      "size_bytes": 8868
+    },
+    {
+      "idx": 16,
+      "title": "第03章 信息来源",
+      "part": "第2版引言",
+      "filename": "16-第03章-信息来源.md",
+      "size_bytes": 7181
+    },
+    {
+      "idx": 17,
+      "title": "第04章 区分投资与投机",
+      "part": "第2版引言",
+      "filename": "17-第04章-区分投资与投机.md",
+      "size_bytes": 7371
+    },
+    {
+      "idx": 18,
+      "title": "第05章 证券的分类",
+      "part": "第2版引言",
+      "filename": "18-第05章-证券的分类.md",
+      "size_bytes": 4337
+    },
+    {
+      "idx": 19,
+      "title": "导读三",
+      "part": "第2版引言",
+      "filename": "19-导读三.md",
+      "size_bytes": 11193
+    },
+    {
+      "idx": 20,
+      "title": "导读四",
+      "part": "第2版引言",
+      "filename": "20-导读四.md",
+      "size_bytes": 4181
+    },
+    {
+      "idx": 21,
+      "title": "第06章 固定价值投资选择的第一原则",
+      "part": "第2版引言",
+      "filename": "21-第06章-固定价值投资选择的第一原则.md",
+      "size_bytes": 8880
+    },
+    {
+      "idx": 22,
+      "title": "第07章 固定价值投资选择的第二和第三原则",
+      "part": "第2版引言",
+      "filename": "22-第07章-固定价值投资选择的第二和第三原则.md",
+      "size_bytes": 9313
+    },
+    {
+      "idx": 23,
+      "title": "第08章 债券投资的具体标准",
+      "part": "第2版引言",
+      "filename": "23-第08章-债券投资的具体标准.md",
+      "size_bytes": 7139
+    },
+    {
+      "idx": 24,
+      "title": "第09章 债券投资的具体标准（续）",
+      "part": "第2版引言",
+      "filename": "24-第09章-债券投资的具体标准（续）.md",
+      "size_bytes": 10107
+    },
+    {
+      "idx": 25,
+      "title": "第10章 债券投资的具体标准（再续）",
+      "part": "第2版引言",
+      "filename": "25-第10章-债券投资的具体标准（再续）.md",
+      "size_bytes": 6409
+    },
+    {
+      "idx": 26,
+      "title": "第11章 债券投资的具体标准（完）",
+      "part": "第2版引言",
+      "filename": "26-第11章-债券投资的具体标准（完）.md",
+      "size_bytes": 6374
+    },
+    {
+      "idx": 27,
+      "title": "第12章 铁路与公用事业债券分析中的特殊因素",
+      "part": "第2版引言",
+      "filename": "27-第12章-铁路与公用事业债券分析中的特殊因素.md",
+      "size_bytes": 11385
+    },
+    {
+      "idx": 28,
+      "title": "第13章 债券分析中的其他特殊因素",
+      "part": "第2版引言",
+      "filename": "28-第13章-债券分析中的其他特殊因素.md",
+      "size_bytes": 3458
+    },
+    {
+      "idx": 29,
+      "title": "第14章 优先股理论",
+      "part": "第2版引言",
+      "filename": "29-第14章-优先股理论.md",
+      "size_bytes": 7049
+    },
+    {
+      "idx": 30,
+      "title": "第15章 优先股投资的选择技巧",
+      "part": "第2版引言",
+      "filename": "30-第15章-优先股投资的选择技巧.md",
+      "size_bytes": 6030
+    },
+    {
+      "idx": 31,
+      "title": "第16章 收益债券和担保证券",
+      "part": "第2版引言",
+      "filename": "31-第16章-收益债券和担保证券.md",
+      "size_bytes": 6882
+    },
+    {
+      "idx": 32,
+      "title": "第17章 担保证券（续）",
+      "part": "第2版引言",
+      "filename": "32-第17章-担保证券（续）.md",
+      "size_bytes": 9866
+    },
+    {
+      "idx": 33,
+      "title": "第18章 保护性条款与优先证券持有人的补偿",
+      "part": "第2版引言",
+      "filename": "33-第18章-保护性条款与优先证券持有人的补偿.md",
+      "size_bytes": 7843
+    },
+    {
+      "idx": 34,
+      "title": "第19章 保护性条款（续）",
+      "part": "第2版引言",
+      "filename": "34-第19章-保护性条款（续）.md",
+      "size_bytes": 7994
+    },
+    {
+      "idx": 35,
+      "title": "第20章 优先股的保护性条款与维持充足的次级资本",
+      "part": "第2版引言",
+      "filename": "35-第20章-优先股的保护性条款与维持充足的次级资本.md",
+      "size_bytes": 9056
+    },
+    {
+      "idx": 36,
+      "title": "第21章 对所持证券的监管",
+      "part": "第2版引言",
+      "filename": "36-第21章-对所持证券的监管.md",
+      "size_bytes": 6059
+    },
+    {
+      "idx": 37,
+      "title": "导读五",
+      "part": "第2版引言",
+      "filename": "37-导读五.md",
+      "size_bytes": 15665
+    },
+    {
+      "idx": 38,
+      "title": "第22章 特权证券",
+      "part": "第2版引言",
+      "filename": "38-第22章-特权证券.md",
+      "size_bytes": 6226
+    },
+    {
+      "idx": 39,
+      "title": "第23章 附带特权优先证券的技术特征",
+      "part": "第2版引言",
+      "filename": "39-第23章-附带特权优先证券的技术特征.md",
+      "size_bytes": 8354
+    },
+    {
+      "idx": 40,
+      "title": "第24章 可转换证券的技术特征",
+      "part": "第2版引言",
+      "filename": "40-第24章-可转换证券的技术特征.md",
+      "size_bytes": 6054
+    },
+    {
+      "idx": 41,
+      "title": "第25章 附带认股权证的优先证券、参与型证券、转换与对冲",
+      "part": "第2版引言",
+      "filename": "41-第25章-附带认股权证的优先证券、参与型证券、转换与对冲.md",
+      "size_bytes": 7556
+    },
+    {
+      "idx": 42,
+      "title": "第26章 存在安全性问题的优先证券",
+      "part": "第2版引言",
+      "filename": "42-第26章-存在安全性问题的优先证券.md",
+      "size_bytes": 8722
+    },
+    {
+      "idx": 43,
+      "title": "导读六",
+      "part": "第2版引言",
+      "filename": "43-导读六.md",
+      "size_bytes": 5673
+    },
+    {
+      "idx": 44,
+      "title": "导读七",
+      "part": "第2版引言",
+      "filename": "44-导读七.md",
+      "size_bytes": 8147
+    },
+    {
+      "idx": 45,
+      "title": "第27章 普通股投资理论",
+      "part": "第2版引言",
+      "filename": "45-第27章-普通股投资理论.md",
+      "size_bytes": 10527
+    },
+    {
+      "idx": 46,
+      "title": "第28章 普通股投资的新准则",
+      "part": "第2版引言",
+      "filename": "46-第28章-普通股投资的新准则.md",
+      "size_bytes": 6545
+    },
+    {
+      "idx": 47,
+      "title": "第29章 普通股分析的股息因素",
+      "part": "第2版引言",
+      "filename": "47-第29章-普通股分析的股息因素.md",
+      "size_bytes": 10527
+    },
+    {
+      "idx": 48,
+      "title": "第30章 股票股息",
+      "part": "第2版引言",
+      "filename": "48-第30章-股票股息.md",
+      "size_bytes": 6274
+    },
+    {
+      "idx": 49,
+      "title": "导读八",
+      "part": "第2版引言",
+      "filename": "49-导读八.md",
+      "size_bytes": 9436
+    },
+    {
+      "idx": 50,
+      "title": "第31章 损益表分析",
+      "part": "第2版引言",
+      "filename": "50-第31章-损益表分析.md",
+      "size_bytes": 9556
+    },
+    {
+      "idx": 51,
+      "title": "第32章 损益表中的非经常性损失和其他特殊项目",
+      "part": "第2版引言",
+      "filename": "51-第32章-损益表中的非经常性损失和其他特殊项目.md",
+      "size_bytes": 6618
+    },
+    {
+      "idx": 52,
+      "title": "第33章 损益表中的误导手段与子公司的盈利",
+      "part": "第2版引言",
+      "filename": "52-第33章-损益表中的误导手段与子公司的盈利.md",
+      "size_bytes": 11173
+    },
+    {
+      "idx": 53,
+      "title": "第34章 盈利能力与折旧及其他类似费用之间的关系",
+      "part": "第2版引言",
+      "filename": "53-第34章-盈利能力与折旧及其他类似费用之间的关系.md",
+      "size_bytes": 12016
+    },
+    {
+      "idx": 54,
+      "title": "第35章 公用事业类公司的折旧政策",
+      "part": "第2版引言",
+      "filename": "54-第35章-公用事业类公司的折旧政策.md",
+      "size_bytes": 8296
+    },
+    {
+      "idx": 55,
+      "title": "第36章 从投资者的角度来看折旧与摊销费用",
+      "part": "第2版引言",
+      "filename": "55-第36章-从投资者的角度来看折旧与摊销费用.md",
+      "size_bytes": 15254
+    },
+    {
+      "idx": 56,
+      "title": "第37章 过往收益的作用",
+      "part": "第2版引言",
+      "filename": "56-第37章-过往收益的作用.md",
+      "size_bytes": 7623
+    },
+    {
+      "idx": 57,
+      "title": "第38章 质疑或否定过往收益",
+      "part": "第2版引言",
+      "filename": "57-第38章-质疑或否定过往收益.md",
+      "size_bytes": 4704
+    },
+    {
+      "idx": 58,
+      "title": "第39章 普通股市盈率与基于资本总额变化的调整",
+      "part": "第2版引言",
+      "filename": "58-第39章-普通股市盈率与基于资本总额变化的调整.md",
+      "size_bytes": 5048
+    },
+    {
+      "idx": 59,
+      "title": "第40章 资本结构",
+      "part": "第2版引言",
+      "filename": "59-第40章-资本结构.md",
+      "size_bytes": 6853
+    },
+    {
+      "idx": 60,
+      "title": "第41章 低价普通股与收益来源分析",
+      "part": "第2版引言",
+      "filename": "60-第41章-低价普通股与收益来源分析.md",
+      "size_bytes": 6019
+    },
+    {
+      "idx": 61,
+      "title": "导读九",
+      "part": "第2版引言",
+      "filename": "61-导读九.md",
+      "size_bytes": 6726
+    },
+    {
+      "idx": 62,
+      "title": "第42章 资产负债表分析与账面价值的重要性",
+      "part": "第2版引言",
+      "filename": "62-第42章-资产负债表分析与账面价值的重要性.md",
+      "size_bytes": 4997
+    },
+    {
+      "idx": 63,
+      "title": "第43章 流动资产价值的重要性",
+      "part": "第2版引言",
+      "filename": "63-第43章-流动资产价值的重要性.md",
+      "size_bytes": 8114
+    },
+    {
+      "idx": 64,
+      "title": "第44章 清算价值的意义以及股东与管理层之间的关系",
+      "part": "第2版引言",
+      "filename": "64-第44章-清算价值的意义以及股东与管理层之间的关系.md",
+      "size_bytes": 9138
+    },
+    {
+      "idx": 65,
+      "title": "第45章 资产负债表分析（完）",
+      "part": "第2版引言",
+      "filename": "65-第45章-资产负债表分析（完）.md",
+      "size_bytes": 10837
+    },
+    {
+      "idx": 66,
+      "title": "导读十",
+      "part": "第2版引言",
+      "filename": "66-导读十.md",
+      "size_bytes": 10001
+    },
+    {
+      "idx": 67,
+      "title": "第46章 认股权证",
+      "part": "第2版引言",
+      "filename": "67-第46章-认股权证.md",
+      "size_bytes": 8627
+    },
+    {
+      "idx": 68,
+      "title": "第47章 融资成本与管理成本",
+      "part": "第2版引言",
+      "filename": "68-第47章-融资成本与管理成本.md",
+      "size_bytes": 7315
+    },
+    {
+      "idx": 69,
+      "title": "第48章 公司金字塔结构的相关内容",
+      "part": "第2版引言",
+      "filename": "69-第48章-公司金字塔结构的相关内容.md",
+      "size_bytes": 5963
+    },
+    {
+      "idx": 70,
+      "title": "第49章 同领域公司的比较分析",
+      "part": "第2版引言",
+      "filename": "70-第49章-同领域公司的比较分析.md",
+      "size_bytes": 8381
+    },
+    {
+      "idx": 71,
+      "title": "第50章 价格与价值的背离",
+      "part": "第2版引言",
+      "filename": "71-第50章-价格与价值的背离.md",
+      "size_bytes": 12634
+    },
+    {
+      "idx": 72,
+      "title": "第51章 价格与价值的背离（续）",
+      "part": "第2版引言",
+      "filename": "72-第51章-价格与价值的背离（续）.md",
+      "size_bytes": 5168
+    },
+    {
+      "idx": 73,
+      "title": "第52章 市场分析与证券分析",
+      "part": "第2版引言",
+      "filename": "73-第52章-市场分析与证券分析.md",
+      "size_bytes": 8541
+    },
+    {
+      "idx": 74,
+      "title": "导读十一",
+      "part": "第2版引言",
+      "filename": "74-导读十一.md",
+      "size_bytes": 6672
+    },
+    {
+      "idx": 75,
+      "title": "附录",
+      "part": null,
+      "filename": "75-附录.md",
+      "size_bytes": 73271
+    },
+    {
+      "idx": 76,
+      "title": "第6版跋",
+      "part": null,
+      "filename": "76-第6版跋.md",
+      "size_bytes": 765
+    },
+    {
+      "idx": 77,
+      "title": "致谢",
+      "part": null,
+      "filename": "77-致谢.md",
+      "size_bytes": 69738
+    }
+  ]
+}
